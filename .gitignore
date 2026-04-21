@@ -1,2 +1,10 @@
-clean_data/*.csv
-raw_data/*.csv
+clean_data/cleaned_demo.csv
+clean_data/cleaned_experiment.csv
+clean_data/cleaned_web.csv
+clean_data/demo_exp_merged.csv
+clean_data/exp_web_merged.csv
+
+raw_data/df_final_demo.csv
+raw_data/df_final_experiment_clients.csv
+raw_data/df_final_web_data_pt_1.csv
+raw_data/df_final_web_data_pt_2.csv
