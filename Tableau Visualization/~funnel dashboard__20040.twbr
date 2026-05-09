@@ -1,0 +1,825 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='funnel_long' inline='true' name='federated.07xs4qj1ipe0tl12kua92063tgxa' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='funnel_long' name='textscan.0v3hakm1ahwg8o1g97z6710cvybv'>
+            <connection class='textscan' directory='C:/Users/HP/OneDrive/Desktop/git-practice/vanguard_abtest_project' filename='funnel_long.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0v3hakm1ahwg8o1g97z6710cvybv' name='funnel_long.csv' table='[funnel_long#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='process_step' ordinal='0' />
+            <column datatype='string' name='variation' ordinal='1' />
+            <column datatype='integer' name='users' ordinal='2' />
+            <column datatype='real' name='drop_off_pct' ordinal='3' />
+            <column datatype='real' name='drop_users' ordinal='4' />
+            <column datatype='real' name='step_conv' ordinal='5' />
+            <column datatype='real' name='overall_conv' ordinal='6' />
+            <column datatype='real' name='conv_diff' ordinal='7' />
+            <column datatype='real' name='drop_diff' ordinal='8' />
+            <column datatype='integer' name='step_order' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[funnel_long.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[funnel_long.csv]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>variation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[variation]</local-name>
+            <parent-name>[funnel_long.csv]</parent-name>
+            <remote-alias>variation</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>users</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[users]</local-name>
+            <parent-name>[funnel_long.csv]</parent-name>
+            <remote-alias>users</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drop_off_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[drop_off_pct]</local-name>
+            <parent-name>[funnel_long.csv]</parent-name>
+            <remote-alias>drop_off_pct</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drop_users</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[drop_users]</local-name>
+            <parent-name>[funnel_long.csv]</parent-name>
+            <remote-alias>drop_users</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>step_conv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[step_conv]</local-name>
+            <parent-name>[funnel_long.csv]</parent-name>
+            <remote-alias>step_conv</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>overall_conv</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[overall_conv]</local-name>
+            <parent-name>[funnel_long.csv]</parent-name>
+            <remote-alias>overall_conv</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conv_diff</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[conv_diff]</local-name>
+            <parent-name>[funnel_long.csv]</parent-name>
+            <remote-alias>conv_diff</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drop_diff</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[drop_diff]</local-name>
+            <parent-name>[funnel_long.csv]</parent-name>
+            <remote-alias>drop_diff</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>step_order</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[step_order]</local-name>
+            <parent-name>[funnel_long.csv]</parent-name>
+            <remote-alias>step_order</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='funnel value' datatype='integer' name='[Calculation_1377205489672192]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [variation] = &quot;Control&quot; THEN -[users]&#13;&#10;ELSE [users]&#13;&#10;END' />
+      </column>
+      <column caption='funnel_long.csv' datatype='table' name='[__tableau_internal_object_id__].[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]' role='measure' type='quantitative' />
+      <column caption='Conv Diff' datatype='real' name='[conv_diff]' role='measure' type='quantitative' />
+      <column caption='Drop Diff' datatype='real' name='[drop_diff]' role='measure' type='quantitative' />
+      <column caption='Drop Off Pct' datatype='real' name='[drop_off_pct]' role='measure' type='quantitative' />
+      <column caption='Drop Users' datatype='real' name='[drop_users]' role='measure' type='quantitative' />
+      <column caption='Overall Conv' datatype='real' name='[overall_conv]' role='measure' type='quantitative' />
+      <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+      <column caption='Step Conv' datatype='real' name='[step_conv]' role='measure' type='quantitative' />
+      <column caption='Step Order' datatype='integer' name='[step_order]' role='measure' type='quantitative' />
+      <column caption='Users' datatype='integer' name='[users]' role='measure' type='quantitative' />
+      <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0z7gbe1000wo1y1ft05581ni7ufs.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/05/2026 07:06:51 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>process_step</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[process_step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>process_step</remote-alias>
+              <ordinal>0</ordinal>
+              <family>funnel_long.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>variation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[variation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>variation</remote-alias>
+              <ordinal>1</ordinal>
+              <family>funnel_long.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>users</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>users</remote-alias>
+              <ordinal>2</ordinal>
+              <family>funnel_long.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>drop_off_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[drop_off_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>drop_off_pct</remote-alias>
+              <ordinal>3</ordinal>
+              <family>funnel_long.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>drop_users</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[drop_users]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>drop_users</remote-alias>
+              <ordinal>4</ordinal>
+              <family>funnel_long.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>step_conv</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[step_conv]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>step_conv</remote-alias>
+              <ordinal>5</ordinal>
+              <family>funnel_long.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>overall_conv</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[overall_conv]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>overall_conv</remote-alias>
+              <ordinal>6</ordinal>
+              <family>funnel_long.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>conv_diff</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[conv_diff]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>conv_diff</remote-alias>
+              <ordinal>7</ordinal>
+              <family>funnel_long.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>drop_diff</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[drop_diff]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>drop_diff</remote-alias>
+              <ordinal>8</ordinal>
+              <family>funnel_long.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>step_order</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[step_order]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>step_order</remote-alias>
+              <ordinal>9</ordinal>
+              <family>funnel_long.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='funnel_long.csv' id='funnel_long.csv_064DBAC7E34B42E7B188CB7942BE7331'>
+            <properties context=''>
+              <relation connection='textscan.0v3hakm1ahwg8o1g97z6710cvybv' name='funnel_long.csv' table='[funnel_long#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='process_step' ordinal='0' />
+                  <column datatype='string' name='variation' ordinal='1' />
+                  <column datatype='integer' name='users' ordinal='2' />
+                  <column datatype='real' name='drop_off_pct' ordinal='3' />
+                  <column datatype='real' name='drop_users' ordinal='4' />
+                  <column datatype='real' name='step_conv' ordinal='5' />
+                  <column datatype='real' name='overall_conv' ordinal='6' />
+                  <column datatype='real' name='conv_diff' ordinal='7' />
+                  <column datatype='real' name='drop_diff' ordinal='8' />
+                  <column datatype='integer' name='step_order' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Funnel analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='funnel_long' name='federated.07xs4qj1ipe0tl12kua92063tgxa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07xs4qj1ipe0tl12kua92063tgxa'>
+            <column caption='funnel value' datatype='integer' name='[Calculation_1377205489672192]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [variation] = &quot;Control&quot; THEN -[users]&#13;&#10;ELSE [users]&#13;&#10;END' />
+            </column>
+            <column caption='Conv Diff' datatype='real' name='[conv_diff]' role='measure' type='quantitative' />
+            <column caption='Drop Diff' datatype='real' name='[drop_diff]' role='measure' type='quantitative' />
+            <column caption='Drop Off Pct' datatype='real' name='[drop_off_pct]' role='measure' type='quantitative' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Conv' datatype='real' name='[overall_conv]' role='measure' type='quantitative' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column caption='Step Conv' datatype='real' name='[step_conv]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1377205489672192]' derivation='Sum' name='[sum:Calculation_1377205489672192:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[conv_diff]' derivation='Sum' name='[sum:conv_diff:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[drop_diff]' derivation='Sum' name='[sum:drop_diff:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[drop_off_pct]' derivation='Sum' name='[sum:drop_off_pct:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[overall_conv]' derivation='Sum' name='[sum:overall_conv:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[step_conv]' derivation='Sum' name='[sum:step_conv:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[users]' derivation='Sum' name='[sum:users:qk]' pivot='key' type='quantitative' />
+            <column caption='Users' datatype='integer' name='[users]' role='measure' type='quantitative' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:process_step:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;start&quot;</bucket>
+              <bucket>&quot;step_1&quot;</bucket>
+              <bucket>&quot;step_2&quot;</bucket>
+              <bucket>&quot;step_3&quot;</bucket>
+              <bucket>&quot;confirm&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:Calculation_1377205489672192:qk]' field-type='quantitative' max='34114' min='-34114' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:variation:nk]' />
+              <tooltip column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:conv_diff:qk]' />
+              <tooltip column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:drop_diff:qk]' />
+              <tooltip column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:step_conv:qk]' />
+              <tooltip column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:drop_off_pct:qk]' />
+              <tooltip column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:overall_conv:qk]' />
+              <text column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:users:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:process_step:nk]</rows>
+        <cols>[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:Calculation_1377205489672192:qk]</cols>
+      </table>
+      <simple-id uuid='{9CF58468-E18F-4902-8F70-1527977D864F}' />
+    </worksheet>
+    <worksheet name='Overall conversion'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='funnel_long' name='federated.07xs4qj1ipe0tl12kua92063tgxa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07xs4qj1ipe0tl12kua92063tgxa'>
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column caption='Overall Conv' datatype='real' name='[overall_conv]' role='measure' type='quantitative' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[overall_conv]' derivation='Sum' name='[sum:overall_conv:qk]' pivot='key' type='quantitative' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:process_step:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;start&quot;</bucket>
+              <bucket>&quot;step_1&quot;</bucket>
+              <bucket>&quot;step_2&quot;</bucket>
+              <bucket>&quot;step_3&quot;</bucket>
+              <bucket>&quot;confirm&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:overall_conv:qk]' value='64' />
+            <encoding attr='space' class='0' field='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:overall_conv:qk]' field-type='quantitative' max='100.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:overall_conv:qk]' scope='rows' value='Conversion rate(%)' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:process_step:nk]' value='59' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:variation:nk]' />
+              <text column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:overall_conv:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:overall_conv:qk]</rows>
+        <cols>[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:process_step:nk]</cols>
+      </table>
+      <simple-id uuid='{FF3101FD-4BF2-4D90-A6BF-749A4BEA431B}' />
+    </worksheet>
+    <worksheet name='drop off pct'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Drop off pct</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='funnel_long' name='federated.07xs4qj1ipe0tl12kua92063tgxa' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07xs4qj1ipe0tl12kua92063tgxa'>
+            <column caption='Drop Off Pct' datatype='real' name='[drop_off_pct]' role='measure' type='quantitative' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column-instance column='[variation]' derivation='None' name='[none:variation:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[drop_off_pct]' derivation='Sum' name='[sum:drop_off_pct:qk]' pivot='key' type='quantitative' />
+            <column caption='Variation' datatype='string' name='[variation]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:process_step:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;step_1&quot;</bucket>
+              <bucket>&quot;step_2&quot;</bucket>
+              <bucket>&quot;step_3&quot;</bucket>
+              <bucket>&quot;confirm&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:drop_off_pct:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:drop_off_pct:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:drop_off_pct:qk]' scope='rows' value='Drop Off (%)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:variation:nk]' />
+              <text column='[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:drop_off_pct:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07xs4qj1ipe0tl12kua92063tgxa].[sum:drop_off_pct:qk]</rows>
+        <cols>[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:process_step:nk]</cols>
+      </table>
+      <simple-id uuid='{47B29DDD-CDD4-4056-B8C3-B407EA7BD44A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Funnel dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97260' id='8' param='horz' type-v2='layout-flow' w='98610' x='695' y='1370'>
+            <zone h='97260' id='3' param='vert' type-v2='layout-flow' w='95830' x='695' y='1370'>
+              <zone h='4281' id='5' type-v2='text' w='95830' x='695' y='1370'>
+                <formatted-text>
+                  <run>Funnel Analysis-Test Vs Control</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='293' h='51541' id='6' is-fixed='true' name='Funnel analysis' w='95830' x='695' y='5651'>
+                <layout-cache minwidth='180' type-h='cell' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41438' id='10' param='horz' type-v2='layout-flow' w='95830' x='695' y='57192'>
+                <zone fixed-size='559' h='41438' id='12' is-fixed='true' name='drop off pct' w='49261' x='695' y='57192'>
+                  <layout-cache minheight='184' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='41438' id='11' name='Overall conversion' w='46565' x='49956' y='57192'>
+                  <layout-cache cell-count-w='5' minheight='184' non-cell-size-w='64' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='32' h='97260' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='2780' x='96525' y='1370'>
+              <zone h='11302' id='9' name='Funnel analysis' pane-specification-id='0' param='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:variation:nk]' type-v2='color' w='2780' x='96525' y='1370'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97260' id='13' param='vert' type-v2='layout-flow' w='98610' x='695' y='1370'>
+                <zone h='4281' id='5' type-v2='text' w='95830' x='695' y='1370'>
+                  <formatted-text>
+                    <run>Funnel Analysis-Test Vs Control</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51541' id='6' is-fixed='true' name='Funnel analysis' w='95830' x='695' y='5651'>
+                  <layout-cache minwidth='180' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11302' id='9' name='Funnel analysis' pane-specification-id='0' param='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:variation:nk]' type-v2='color' w='2780' x='96525' y='1370'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41438' id='12' is-fixed='true' name='drop off pct' w='49261' x='695' y='57192'>
+                  <layout-cache minheight='184' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41438' id='11' is-fixed='true' name='Overall conversion' w='46565' x='49956' y='57192'>
+                  <layout-cache cell-count-w='5' minheight='184' non-cell-size-w='64' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7CF479BB-91FE-42E5-BD92-65626A93C6A8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Funnel analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{FE66251B-B87D-415B-A1CA-2889FF87319A}' />
+    </window>
+    <window class='worksheet' name='Overall conversion'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BD52ECFB-778F-496C-B830-93C8D8BBF348}' />
+    </window>
+    <window class='worksheet' name='drop off pct'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07xs4qj1ipe0tl12kua92063tgxa].[none:variation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{28D353DC-6A6C-4222-92D5-306AC56AA115}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Funnel dashboard'>
+      <viewpoints>
+        <viewpoint name='Funnel analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Overall conversion'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='drop off pct'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{12C5D6CD-F81E-4075-A038-03F7EA662A5E}' />
+    </window>
+  </windows>
+</workbook>
