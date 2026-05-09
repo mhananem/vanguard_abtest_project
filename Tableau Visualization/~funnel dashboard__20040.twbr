@@ -618,7 +618,7 @@
                   </zone-style>
                 </zone>
                 <zone h='41438' id='11' name='Overall conversion' w='46565' x='49956' y='57192'>
-                  <layout-cache cell-count-w='5' minheight='184' non-cell-size-w='64' type-h='scalable' type-w='cell' />
+                  <layout-cache minheight='184' type-h='scalable' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -718,7 +718,7 @@
       <simple-id uuid='{7CF479BB-91FE-42E5-BD92-65626A93C6A8}' />
     </dashboard>
   </dashboards>
-  <windows source-height='30'>
+  <windows show-side-pane='false' source-height='30'>
     <window class='worksheet' name='Funnel analysis'>
       <cards>
         <edge name='left'>
